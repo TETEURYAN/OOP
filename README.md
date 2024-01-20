@@ -4,7 +4,6 @@ In this subject we will study Object Oriented Programming. This subject is from 
   <img src="https://user-images.githubusercontent.com/91018438/204195385-acc6fcd4-05a7-4f25-87d1-cb7d5cc5c852.png" alt="animated" />
 </p>
 
-
 # OOP Fundamentals
 OOP is a powerful paradigm that has become the dominant approach in modern software development. Its foundations are based on Inheritance, Polymorphism, Encapsulation and Abstraction. To do this, we will use the Java programming language.
  * Java JDK
