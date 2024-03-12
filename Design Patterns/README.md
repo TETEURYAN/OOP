@@ -2,14 +2,15 @@
 In this repo tab we will cover design patterns
 
 ## Facade
-Facade creates a simpler interface for interacting with a complicated subsystem that might have many interdependent classes or use legacy code. By providing a single point of entry, Facade reduces dependencies between the client code and the subsystem itself. This makes the code more maintainable and easier to test.
+ The Facade class provides a simple interface to the complex logic of one or several subsystems. The Facade delegates the client requests to the appropriate objects within the subsystem. The Facade is also responsible for managing their lifecycle. All of this shields the client from the undesired complexity of the subsystem.
 
 <p align="center">
-  <img src=https://refactoring.guru/images/patterns/diagrams/facade/structure.png" alt="animated" />
+  <img src="https://refactoring.guru/images/patterns/diagrams/facade/structure.png?id=258401362234ac77a2aaf1cde62339e7">
 </p>
 
 * Code example
-´´´cpp
+
+```c
     class Subsystem1 {
  public:
   std::string Operation1() const {
@@ -34,13 +35,6 @@ class Subsystem2 {
   }
 };
 
-/**
- * The Facade class provides a simple interface to the complex logic of one or
- * several subsystems. The Facade delegates the client requests to the
- * appropriate objects within the subsystem. The Facade is also responsible for
- * managing their lifecycle. All of this shields the client from the undesired
- * complexity of the subsystem.
- */
 class Facade {
  protected:
   Subsystem1 *subsystem1_;
@@ -59,4 +53,4 @@ class Facade {
     delete subsystem2_;
   }
 } 
-´´´
+```
