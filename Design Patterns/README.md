@@ -1,5 +1,5 @@
 # Desing Patterns
-In this repo tab we will cover design patterns
+Design patterns are typical solutions to common problems in software design. Each pattern is like a blueprint that you can customize to solve a particular design problem in your code. Patterns are a toolkit of solutions to common problems in software design. They define a common language that helps your team communicate more efficiently.
 
 ## Facade
  The Facade class provides a simple interface to the complex logic of one or several subsystems. The Facade delegates the client requests to the appropriate objects within the subsystem. The Facade is also responsible for managing their lifecycle. All of this shields the client from the undesired complexity of the subsystem.
